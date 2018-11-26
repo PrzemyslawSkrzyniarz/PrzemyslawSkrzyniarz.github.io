@@ -1,0 +1,17 @@
+#first::before {
+    display: inline-block;
+    content: 'BEFORE';
+    width: 20px;
+    height: 20px;
+    background: red;
+    color: blue;
+}
+
+#second::after {
+    display: inline-block;
+    content: 'AFTER';
+    width: 20px;
+    height: 20px;
+    background: blue;
+    color: red;
+}

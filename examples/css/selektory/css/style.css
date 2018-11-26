@@ -1,0 +1,27 @@
+p {
+    color: firebrick;
+}
+
+.text {
+    color: darksalmon;
+}
+
+p.text {
+    color: aqua;
+}
+
+div.text {
+    color: chocolate;
+}
+
+ul > li {
+    color: limegreen;
+}
+
+/* Element z id third i wszystkie elementy po li z id third */
+ul > li#third,
+ul > li#third ~ li {
+    color: darkmagenta;
+}
+
+/*A jak chcesz pokolorować dwa z przodu to zamień tylko kolejnością dwie poprzednie style*/

@@ -1,0 +1,36 @@
+#button:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+#text:focus {
+    color: darkcyan;
+}
+
+#button:active {
+    background-color: crimson;
+}
+
+ul li:first-child {
+    color: chartreuse;
+}
+
+ul li:last-child {
+    color: chartreuse;
+}
+
+ul li:nth-child(even){
+    color: brown;
+}
+
+ul li:nth-child(odd){
+    color: green;
+}
+
+ul li:nth-child(6){
+    color: blue;
+}
+
+ul li:nth-child(3n+2){
+    color: peru;
+}

@@ -1,0 +1,29 @@
+body{
+    font-size: 30px;
+}
+
+div {
+    height: 30px;
+    background-color: coral;
+    margin-bottom: 10px;
+}
+
+#pixels {
+    width: 300px;
+}
+
+#em {
+    width: 10em;
+}
+
+#percent{
+    width: 50%;
+}
+
+#vh{
+    width: 40vh;
+}
+
+#vw{
+    width: 40vw;
+}

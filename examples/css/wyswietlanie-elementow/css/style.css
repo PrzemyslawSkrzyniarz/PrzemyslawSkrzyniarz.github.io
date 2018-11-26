@@ -1,0 +1,20 @@
+p {
+    display: inline;
+}
+
+#p1 {
+    background-color: coral;
+}
+
+
+#p2 {
+    background-color: blue;
+}
+
+ul > li {
+    display: inline;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    background-color: aqua;
+}

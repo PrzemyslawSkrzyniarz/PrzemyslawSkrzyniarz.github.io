@@ -1,0 +1,16 @@
+div {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    float: left;
+    transition: all 3s;
+}
+
+p {
+    clear: left;
+}
+
+div:hover{
+    background-color: red;
+    width: 3000px;
+}
