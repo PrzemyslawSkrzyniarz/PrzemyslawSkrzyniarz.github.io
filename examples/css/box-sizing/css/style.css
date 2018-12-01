@@ -1,0 +1,14 @@
+.box {
+    height: 100px;
+    width: 300px;
+    border: 5px solid #00ff00;
+}
+
+.content{
+    box-shadow: content-box;
+}
+
+.border{
+    box-sizing: border-box; /*padding i border nieistnieje dla nas*/
+}
+

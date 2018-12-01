@@ -1,0 +1,32 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-content {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    text-transform: uppercase;
+}
+
+span {
+    color: #427cfe;
+}
+
+h2 {
+    font-weight: 600; /*Przykład ostylowania*/
+}

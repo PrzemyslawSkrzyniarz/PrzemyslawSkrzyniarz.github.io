@@ -1,0 +1,33 @@
+#gallery {
+    width: 90%;
+}
+
+figure {
+    width: 33%;
+}
+
+/* Large screen */
+@media all and (min-width: 768px) and (max-width: 992px) {
+
+    figure {
+        width: 49%;
+        /*Chyba, że chcę wstawić 50% to muszę dać wcześniej >> body {font-size: 0;} */
+    }
+}
+
+@media all and (max-width: 767px) {
+
+    figure {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #gallery {
+        width: 100%;
+    }
+    
+    body {
+        margin: 0;
+    }
+}

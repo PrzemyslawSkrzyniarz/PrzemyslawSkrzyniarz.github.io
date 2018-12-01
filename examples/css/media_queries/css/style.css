@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box; /*usuwa paddingi i bordery*/
+}
+
+body {
+    font-size: 0; /*usuwa szerokość znaków białych np. entery, spacje*/
+}
+
+.box {
+    display: inline-block;
+    height: 500px;
+    width: 25%;
+    border: 10px solid black;
+}
+
+@media all and (max-width: 768px) {
+    .box {
+        width: 50%;
+        border-color: brown;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .box {
+        width: 100%;
+        border-color: blueviolet;
+    }
+}

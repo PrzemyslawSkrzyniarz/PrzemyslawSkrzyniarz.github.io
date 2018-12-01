@@ -1,0 +1,10 @@
+div.background{
+    height: 100vh; /*Na ty,m obszarze co widzimy czyli poza tym obszarem tego tła nia ma - renderuje się podczas przewijania*/
+    background-image: url(../img/cat-1508613_640.jpg);
+    background-color: aqua;
+    background-repeat: no-repeat;
+/*  background-position: 400px 200px; W przeglądarce po rozwinięciu znacznika widać rozdzielone atrybuty
+    background-position: bottom right;*/
+    background-size: 50% 50%;
+    background-attachment: fixed; /*Do menu do wybranego widocznego obszaru strony*/
+}

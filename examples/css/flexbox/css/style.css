@@ -1,0 +1,47 @@
+.container {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    
+/*
+    flex-wrap: wrap;
+    align-content: space-around;
+*/
+/*    justify-content: space-evenly;*/
+    /*    flex-direction: column; Zmiana w osi pobocznej - cross axis*/
+    /*    flex-wrap: wrap;*/
+}
+
+.item {
+    height: 200px;
+    width: 100px;
+    background-color: aqua;
+    border: 3px solid orange;
+    /*    flex-basis: 20%;  Zakomentowane, bo użyliśmy height i width czyli na sztywno, by się nie myliło*/
+    flex-grow: 1;
+}
+
+.first {
+/*
+    align-self: flex-end; By nadać jedemu bezpośredniemu dziecku inne uporządkowanie
+    order: 1;
+*/
+    /*    flex-basis: 50%;*/
+    /*Ziana w osi głównej - main axis*/
+    /* Zakomentowaliśmy gdy w .item ustaliliśmy width: 300px;*/
+/*    flex-grow: 2;*/
+
+}
+
+
+/* To nadajemy kontenerowi/kwadratowi by wycentrować w nim np. kółko
+    display: flex;
+    align-items: center;
+    justify-content: center;
+*/
+
+.second {
+/*    order: 6; Gdyby tu była 1 to ma taki sam jak klasa first a zatem ważna jest kolejność ułożenia/stworzenia w html*/
+    flex-grow: 10;
+    flex-shrink: 1;
+}

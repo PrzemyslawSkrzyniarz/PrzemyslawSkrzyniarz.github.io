@@ -1,0 +1,50 @@
+img {
+    height: 300px;
+    margin-bottom: 100px;
+    transition: all 1s;
+    transform-origin: bottom right;
+}
+
+#rotate img:hover {
+    transform: rotate(60deg);
+}
+
+#translate img:hover {
+    transform: translate(100px, 50px);
+/*    transform: translate(-100px, -50px);*/
+}
+
+#scale img {
+    transform-origin: center; /*Anulowanie transform-origin: bottom right - w hover działa bez zastanawiania się ;-) */
+}
+
+#scale img:hover {
+    transform: scale(1.5, -4);
+}
+
+#animation img {
+    animation-name: resize;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+
+@keyframes resize {
+    0% {
+        width: 450px;
+    }
+    25% {
+        width: 700px;
+        border: 2px solid red;
+    }
+    50% {
+        width: 550px;
+        order: 2px solid blue;
+    }
+    75% {
+        width: 620px;
+        order: 2px solid red;
+    }
+    100% {
+        width: 450px;
+    }
+}
