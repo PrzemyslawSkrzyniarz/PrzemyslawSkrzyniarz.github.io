@@ -20,7 +20,7 @@ hr {
     background-color: transparent;
     border: 1px solid #007bff;
     text-decoration: none; /*uswa podkreślenie*/
-    padding: 14px 20px; /*Rozmiar przycisku (batona) dostosuje się do tekstu który jest w środku*/
+    padding: 14px 20px; /*Dzięki zastosowaniu paddingu rozmiar przycisku (button) dostosuje się do tekstu który jest w środku, a nie będzie wystawał tekst gdy się zmieni jego ilość czy rozmiar*/
     color: #333;
     text-transform: uppercase;
     transition: all 0.3s;
