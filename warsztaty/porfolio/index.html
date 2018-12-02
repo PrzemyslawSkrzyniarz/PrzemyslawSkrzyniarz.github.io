@@ -69,8 +69,7 @@
             </header>
 
             <div class="portfolio-wrapper">
-
-<!-- Skrót do emmeta >>>>> a.portfolio-item*12>img[src=./img/portfolio/photo-$.jpg][alt=Projekt]+h3{Project}            -->
+                <!-- Skrót do emmeta >>>>> a.portfolio-item*12>img[src=./img/portfolio/photo-$.jpg][alt=Projekt]+h3{Project}            -->
                 <a href="" class="portfolio-item">
                     <img src="./img/portfolio/photo-1.jpg" alt="Projekt">
                     <h3>Project</h3>
@@ -119,18 +118,39 @@
                     <img src="./img/portfolio/photo-12.jpg" alt="Projekt">
                     <h3>Project</h3>
                 </a>
-
             </div>
         </div>
     </section>
 
     <!-- Kontakt -->
     <section id="contact" class="contact">
+        <header class="main-header-section">
+            <h2>Kontakt</h2>
+            <hr>
+        </header>
 
+        <form action="https://formspree.io/przemyslaw.hilary.skrzyniarz@gmail.com" method="POST">
+            <input type="text" name="name" required placeholder="Imię" id="name">
+            <input type="email" name="_replyto" required placeholder="Email" id="email">
+            <textarea name="message" required placeholder="Wiadomość" id="message"></textarea>
+            <input type="submit" class="btn" value="Wyślij wiadomość">
+        </form>
+
+        <div class="social-links">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+        </div>
     </section>
-
+    
+    <!-- Footer -->
     <footer>
-        <p></p>
+        
+        <div class="container">
+            <p>Copyrigh &copy; Akademia 108 - Szkoła Programowania</p>
+        </div>
+        
     </footer>
 
 </body>
