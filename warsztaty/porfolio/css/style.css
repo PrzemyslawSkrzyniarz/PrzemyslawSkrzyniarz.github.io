@@ -1,4 +1,5 @@
 /*General styles*/
+
 * {
     box-sizing: border-box;
     /*By nie uwzględniać borderów i paddingów podczas obliczania rozmiarów*/
@@ -108,6 +109,12 @@ header span {
     z-index: 100;
 }
 
+.main-nav label,
+.main-nav #drop-nav {
+    display: none;
+    /*ukrywamy menu przy mniejszych rozdzielczościach*/
+}
+
 .main-nav .nav-menu {
     margin: 0;
     /*Usuwamy, bo taki element jak ul, li czy p mają marginesy*/
@@ -143,8 +150,10 @@ header span {
 }
 
 .about p {
-    max-width: 700px; /*paragraf jest elementem blokowym*/
-    margin: 40px auto 40px auto; /*zatem możemy go lewo-prawo środkować za pomocą margin*/
+    max-width: 700px;
+    /*paragraf jest elementem blokowym*/
+    margin: 40px auto 40px auto;
+    /*zatem możemy go lewo-prawo środkować za pomocą margin*/
 }
 
 .about .btn {
@@ -153,8 +162,10 @@ header span {
 }
 
 /*Portfolio*/
+
 .portfolio {
-    background-color: #f2f1ed; /*Dla wększej ilości sekcji można użyć opcji even-parzyste zamiast klas*/
+    background-color: #f2f1ed;
+    /*Dla wększej ilości sekcji można użyć opcji even-parzyste zamiast klas*/
 }
 
 .portfolio .portfolio-wrapper {
@@ -166,34 +177,45 @@ header span {
 .portfolio .portfolio-wrapper .portfolio-item {
     height: 200px;
     flex-basis: 25%;
-    position: relative; /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 1 warunek z 5*/
+    position: relative;
+    /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 1 warunek z 5*/
 }
 
 .portfolio .portfolio-wrapper .portfolio-item img {
-    height: 100%; /*jak ustalimy 100% to dopasuje się do swojego rodzica*/
-    width: 100%; /*jak ustalimy 100% to dopasuje się do swojego rodzica*/
-    object-fit: cover; /*cendtrum zdjęcia zostaje przy zmniejszaniu, jest tylko obcinane przy zmniejszaniu*/
+    height: 100%;
+    /*jak ustalimy 100% to dopasuje się do swojego rodzica*/
+    width: 100%;
+    /*jak ustalimy 100% to dopasuje się do swojego rodzica*/
+    object-fit: cover;
+    /*cendtrum zdjęcia zostaje przy zmniejszaniu, jest tylko obcinane przy zmniejszaniu*/
 }
 
 .portfolio .portfolio-wrapper .portfolio-item h3 {
     position: absolute;
-    top: 0; /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 2 warunek z 5*/
-    line-height: 200px; /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 3 warunek z 5*/
-    margin: 0; /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 4 warunek z 5*/
-    width: 100%; /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 5 warunek z 5*/
+    top: 0;
+    /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 2 warunek z 5*/
+    line-height: 200px;
+    /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 3 warunek z 5*/
+    margin: 0;
+    /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 4 warunek z 5*/
+    width: 100%;
+    /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 5 warunek z 5*/
     font-size: 3em;
     font-weight: 300;
     color: #fff;
     background-color: rgba(0, 123, 255, 0.8);
-    opacity: 0; /*przeźroczyste*/
+    opacity: 0;
+    /*przeźroczyste*/
     transition: all 0.5s;
 }
 
 .portfolio .portfolio-wrapper .portfolio-item h3:hover {
-    opacity: 1; /*nieprzeźroczyste*/
+    opacity: 1;
+    /*nieprzeźroczyste*/
 }
 
 /* Contact */
+
 .contact form {
     max-width: 700px;
     margin: 40px auto;
@@ -202,7 +224,7 @@ header span {
     flex-wrap: wrap;
 }
 
-.contact form input:not([type='submit']){
+.contact form input:not([type='submit']) {
     flex-basis: 48%;
     padding: 15px;
     margin-bottom: 15px;
@@ -234,6 +256,7 @@ header span {
 }
 
 /* Footer */
+
 footer {
     background-color: #f2f1ed;
     text-align: center;
