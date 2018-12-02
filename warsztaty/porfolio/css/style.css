@@ -1,57 +1,89 @@
 /*General styles*/
-*{
-    box-sizing: border-box; /*By nieuwzględniać borderów i paddingów podczas obliczania rozmiarów*/
+* {
+    box-sizing: border-box;
+    /*By nieuwzględniać borderów i paddingów podczas obliczania rozmiarów*/
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     color: #333;
-/*    background: #427cfe;*/
+    /*    background: #427cfe;*/
 }
 
 hr {
     background-color: #007bff;
     height: 1px;
     width: 70px;
-    border: 0; /*usuwamy wewnętrzny border czyli border-style: inset; */
+    border: 0;
+    /*usuwamy wewnętrzny border czyli border-style: inset; */
 }
 
 .btn {
     background-color: transparent;
     border: 1px solid #007bff;
-    text-decoration: none; /*uswa podkreślenie*/
-    padding: 14px 20px; /*Dzięki zastosowaniu paddingu rozmiar przycisku (button) dostosuje się do tekstu który jest w środku, a nie będzie wystawał tekst gdy się zmieni jego ilość czy rozmiar*/
+    text-decoration: none;
+    /*uswa podkreślenie*/
+    padding: 14px 20px;
+    /*Dzięki zastosowaniu paddingu rozmiar przycisku (button) dostosuje się do tekstu który jest w środku, a nie będzie wystawał tekst gdy się zmieni jego ilość czy rozmiar*/
     color: #333;
     text-transform: uppercase;
+    /*Wyświetlanie dużych liter*/
     transition: all 0.3s;
 }
 
 .btn:hover {
     background-color: #007bff;
     color: #fff;
-    
 }
 
+section {
+    text-align: center;
+    /*Centruję wszystko na stronie w poziomie w tym wszystkie elementy liniowe czyli img, text, link, h - nagłówki*/
+    padding: 120px 0;
+    /*By były odtępy z góry i z dołu w każdym elemencie*/
+}
 
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+section header {
+    margin-bottom: 80px;
+}
+
+section header h2 {
+    font-size: 1.9em;
+    text-transform: uppercase;
+    font-weight: 400;
+}
 
 /* Header */
 
 .main-header {
-    display: flex; /*tylko do bezpośrednich dzieci*/
-    justify-content: center; /*poziomo*/
-    align-items: center; /*pionowo*/
-    text-align: center; /*także do wszystkich dzieci ze względu na dziedziczenie czyli np. wnuków itd.*/
-    height: 70vh; /*70% okna przeglądarki*/
+    display: flex;
+    /*tylko do bezpośrednich dzieci*/
+    justify-content: center;
+    /*poziomo*/
+    align-items: center;
+    /*pionowo*/
+    text-align: center;
+    /*także do wszystkich dzieci ze względu na dziedziczenie czyli np. wnuków itd.*/
+    height: 70vh;
+    /*70% okna przeglądarki*/
     background-image: url(../img/header.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .main-header h1 {
-    font-size: 4.2em; /*krotność rozmaru czcionki standardowej w przeglądarce - standardowo jest 16px - Gdyby było 4.2rem to brana jest pod uwagę wielkość domyślna przeglądarki lub ustalona przez nas dla całego html font-size*/
-    text-transform: uppercase; /*Duże litery*/
+    font-size: 4.2em;
+    /*krotność rozmaru czcionki standardowej w przeglądarce - standardowo jest 16px - Gdyby było 4.2rem to brana jest pod uwagę wielkość domyślna przeglądarki lub ustalona przez nas dla całego html font-size*/
+    text-transform: uppercase;
+    /*Wyświetlanie dużych liter*/
     color: #007bff;
-    margin: 0; /*Usuwamy, bo taki element jak h1 czy p mają marginesy*/
+    margin: 0;
+    /*Usuwamy, bo taki element jak h1 czy p mają marginesy*/
 }
 
 .main-header p {
@@ -62,30 +94,101 @@ hr {
     color: #333;
 }
 
-
 header span {
     color: #427cfe;
 }
 
+/* Navigation */
 
+.main-nav {
+    position: sticky;
+    top: 0;
+    /*ma się przy przewijaniu zatrzymać przy samej górze*/
+    background-color: #007bff;
+    z-index: 100;
+}
 
-/*
-.main-header-content {
-    display: flex;
-    flex-direction: column;
+.main-nav .nav-menu {
+    margin: 0;
+    /*Usuwamy, bo taki element jak ul, li czy p mają marginesy*/
     text-align: center;
-    justify-content: center;
+    padding: 10px 0;
 }
 
+.main-nav .nav-menu .nav-menu-item {
+    display: inline-block;
+    margin: 0 10px;
+}
 
-p {
+.main-nav .nav-menu .nav-menu-item a {
+    text-decoration: none;
+    color: #fff;
     text-transform: uppercase;
+    padding: 15px 20px;
+    display: inline-block;
+    /*By zadziałały padding powyżej bo linki to text i nie ma wysokości bo to obiekt liniowy*/
+    transition: all 0.3s;
+    /*Czas przejścia ustawiamy tu a nie w hover poniżej bo po zjechaniu myszką dzieje się to powoli czyli efekt kończy działanie*/
 }
 
-span {
-    color: #427cfe;
+.main-nav .nav-menu .nav-menu-item a:hover {
+    color: #007bff;
+    background-color: #fff;
 }
 
-h2 {
-    font-weight: 600; Przykład ostylowania
-}*/
+/* About */
+
+.about img {
+    border-radius: 50%;
+}
+
+.about p {
+    max-width: 700px; /*paragraf jest elementem blokowym*/
+    margin: 40px auto 40px auto; /*zatem możemy go lewo-prawo środkować za pomocą margin*/
+}
+
+.about .btn {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/*Portfolio*/
+.portfolio {
+    background-color: #f2f1ed; /*Dla wększej ilości sekcji można użyć opcji even-parzyste zamiast klas*/
+}
+
+.portfolio .portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item {
+    height: 200px;
+    flex-basis: 25%;
+    position: relative; /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 1 warunek z 5*/
+}
+
+.portfolio .portfolio-wrapper .portfolio-item img {
+    height: 100%; /*jak ustalimy 100% to dopasuje się do swojego rodzica*/
+    width: 100%; /*jak ustalimy 100% to dopasuje się do swojego rodzica*/
+    object-fit: cover; /*cendtrum zdjęcia zostaje przy zmniejszaniu, jest tylko obcinane przy zmniejszaniu*/
+}
+
+.portfolio .portfolio-wrapper .portfolio-item h3 {
+    position: absolute;
+    top: 0; /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 2 warunek z 5*/
+    line-height: 200px; /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 3 warunek z 5*/
+    margin: 0; /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 4 warunek z 5*/
+    width: 100%; /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 5 warunek z 5*/
+    font-size: 3em;
+    font-weight: 300;
+    color: #fff;
+    background-color: rgba(0, 123, 255, 0.8);
+    opacity: 0; /*przeźroczyste*/
+    transition: all 0.5s;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item h3:hover {
+    opacity: 1; /*nieprzeźroczyste*/
+}

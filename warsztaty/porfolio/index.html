@@ -21,24 +21,113 @@
 </head>
 
 <body>
-    <!--Header-->
+    <!-- Header -->
     <header class="main-header">
         <div class="main-header-content">
             <h1>Front end developer</h1>
             <hr>
-            <p>html <span>&#8226;</span> css <span>&#8226;</span> JavaScript</p> <!--html symbols >> https://www.toptal.com/designers/htmlarrows/punctuation/bullet/-->
+            <p>html <span>&#8226;</span> css <span>&#8226;</span> JavaScript</p>
+            <!--html symbols >> https://www.toptal.com/designers/htmlarrows/punctuation/bullet/-->
             <a href="#" class="btn">Dowiedz się więcej</a>
         </div>
     </header>
 
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <ul class="nav-menu">
+            <li class="nav-menu-item"><a href="#about">O mnie</a></li>
+            <li class="nav-menu-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav-menu-item"><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
 
-    <nav id="menu"></nav>
+    <!-- About -->
+    <section id="about" class="about">
+        <!--id="about" to tzw. kotwica dla menu-->
+        <div class="container">
+            <header class="main-header-section">
+                <h2>O mnie</h2>
+                <hr>
+            </header>
 
-    <section id="about"></section>
+            <img src="./img/about.jpg" alt="Anna Kowalska">
 
-    <section id="portfolio"></section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ipsam explicabo veniam debitis ducimus, nisi laboriosam sunt velit eligendi. Fugit omnis vitae assumenda iure! Earum perferendis explicabo in odit necessitatibus!</p>
 
-    <section id="contact"></section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quae tempora a aspernatur quod, ipsa reprehenderit vitae laudantium debitis dicta nobis in perspiciatis. Nisi incidunt quaerat veniam, labore consequatur! Dolorem.</p>
+
+            <a href="#portfolio" class="btn">Moje portfolio</a>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <header class="main-header-section">
+                <h2>Portfolio</h2>
+                <hr>
+            </header>
+
+            <div class="portfolio-wrapper">
+
+<!-- Skrót do emmeta >>>>> a.portfolio-item*12>img[src=./img/portfolio/photo-$.jpg][alt=Projekt]+h3{Project}            -->
+                <a href="" class="portfolio-item">
+                    <img src="./img/portfolio/photo-1.jpg" alt="Projekt">
+                    <h3>Project</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="./img/portfolio/photo-2.jpg" alt="Projekt">
+                    <h3>Project</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="./img/portfolio/photo-3.jpg" alt="Projekt">
+                    <h3>Project</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="./img/portfolio/photo-4.jpg" alt="Projekt">
+                    <h3>Project</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="./img/portfolio/photo-5.jpg" alt="Projekt">
+                    <h3>Project</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="./img/portfolio/photo-6.jpg" alt="Projekt">
+                    <h3>Project</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="./img/portfolio/photo-7.jpg" alt="Projekt">
+                    <h3>Project</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="./img/portfolio/photo-8.jpg" alt="Projekt">
+                    <h3>Project</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="./img/portfolio/photo-9.jpg" alt="Projekt">
+                    <h3>Project</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="./img/portfolio/photo-10.jpg" alt="Projekt">
+                    <h3>Project</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="./img/portfolio/photo-11.jpg" alt="Projekt">
+                    <h3>Project</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="./img/portfolio/photo-12.jpg" alt="Projekt">
+                    <h3>Project</h3>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact" class="contact">
+
+    </section>
 
     <footer>
         <p></p>
