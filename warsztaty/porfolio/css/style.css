@@ -51,7 +51,7 @@ hr {
     font-size: 4.2em; /*krotność rozmaru czcionki standardowej w przeglądarce - standardowo jest 16px - Gdyby było 4.2rem to brana jest pod uwagę wielkość domyślna przeglądarki lub ustalona przez nas dla całego html font-size*/
     text-transform: uppercase; /*Duże litery*/
     color: #007bff;
-    margin: 0; /*Usuwamy, bo taki element jak h1 ma marginesy tj. p*/
+    margin: 0; /*Usuwamy, bo taki element jak h1 czy p mają marginesy*/
 }
 
 .main-header p {
