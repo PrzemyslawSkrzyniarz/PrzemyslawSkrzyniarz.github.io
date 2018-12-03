@@ -1,0 +1,22 @@
+#container{
+  background-color: #a6b9b6;
+  height: 400px;
+  width: 400px;
+  margin: 10px 10px;
+  border: 10px solid #666360;
+}
+
+.inner{
+  height: 200px;
+  width: 200px;
+}
+
+#container #k1{
+  background-color: #e4e4e4;
+  position: relative;
+  left: 200px;
+}
+
+#container #k2{
+  background-color: #ff912e;
+}
