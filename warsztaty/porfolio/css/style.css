@@ -39,7 +39,7 @@ hr {
 
 section {
     text-align: center;
-    /*Centruję wszystko na stronie w poziomie w tym wszystkie elementy liniowe czyli img, text, link, h - nagłówki*/
+    /*Centruję wszystko na stronie w poziomie w tym wszystkie elementy liniowe czyli img, text, link*/
     padding: 120px 0;
     /*By były odtępy z góry i z dołu w każdym elemencie*/
 }
