@@ -1,0 +1,68 @@
+body {
+    background-color: #f2a0a0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+    
+    background-color: #f3f4f6;
+    height: 302px;
+    width: 302px;
+    padding: 2px;
+}
+
+#square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+
+#circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.red {
+    background-color: red;
+}
+
+.coral {
+    background-color: coral;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.green {
+    background-color: green;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.black {
+    background-color: black;
+}
+
+.orange {
+    background-color: orange;
+}
