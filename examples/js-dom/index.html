@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>JS DOM Examples</title>
+    
+</head>
+
+<body>
+
+    <h1>To jest nagłówek</h1>
+
+    <!--section#about>h2{Nagłówek}+p{Lorem20}-->
+    <section id="about">
+        <h2 class="about-heading">Nagłówek</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nemo ipsa doloremque, numquam cumque iure sit dolorum. Nam, quia, error.</p>
+        
+        <!--ul>li.list-item*12>a{link $}-->
+        <ul>
+            <li class="list-item first"><a href="" id="first-link">link 1</a></li>
+            <li class="list-item"><a href="">link 2</a></li>
+            <li class="list-item"><a href="">link 3</a></li>
+            <li class="list-item"><a href="">link 4</a></li>
+            <li class="list-item"><a href="">link 5</a></li>
+            <li class="list-item"><a href="">link 6</a></li>
+            <li class="list-item"><a href="">link 7</a></li>
+            <li class="list-item"><a href="">link 8</a></li>
+            <li class="list-item"><a href="">link 9</a></li>
+            <li class="list-item"><a href="">link 10</a></li>
+            <li class="list-item"><a href="">link 11</a></li>
+            <li class="list-item last"><a href="">link 12</a></li>
+        </ul>
+        
+        <!--ul.users>li.user-item{User $}*10-->
+        <ul class="users">
+           <!-- Lista -->
+            <li class="user-item">User 1</li>
+            <li class="user-item">User 2</li>
+            <li class="user-item">User 3</li>
+            <li class="user-item">User 4</li>
+            <li class="user-item">User 5</li>
+            <li class="user-item">User 6</li>
+            <li class="user-item">User 7</li>
+            <li class="user-item">User 8</li>
+            <li class="user-item">User 9</li>
+            <li class="user-item">User 10</li>
+        </ul>
+        
+        <button id="add-user-button">Dodaj użytkownika</button>
+        <button id="stop">Przestań nasłuchiwać click</button>
+        
+        
+    </section>
+
+    <script src="js/6-events.js"></script>
+</body>
+
+</html>
