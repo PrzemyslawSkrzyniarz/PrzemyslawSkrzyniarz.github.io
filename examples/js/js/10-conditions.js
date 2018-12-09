@@ -48,3 +48,6 @@ switch (lightColor) {
     default:
         console.log('uważaj, światła zepsute');
 }
+
+
+
