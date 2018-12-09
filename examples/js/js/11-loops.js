@@ -62,11 +62,39 @@ let randomNumber = Math.round(Math.random()*10); //losujemy liczbę losowo z prz
 }*/
 
 //Pierwszy raz się wykona bez sprawdzenia warunku
+
 do{
     console.log(randomNumber);
     randomNumber = Math.round(Math.random()*10);    
 } while (randomNumber != 5)
 
+/* Instrukcja break */
 
+/*for(let i = 0; i < 1000; i++) {
+    
+    if(i > 100) break; //Jak mamy jednolinijkowy if to możemy go zapisać bez klamr
+    
+    console.log(i);
+}*/
+
+/* Instrukcja continue */
+
+    //wyśietla tylko liczby podzielne przez 3
+/*for(let i = 0; i < 100; i++) {
+    
+    if(!(i%3 == 0)) {
+        continue;
+    };*/
+    
+//lub tak
+    
+for(let i = 0; i < 100; i++) {
+    
+    if(i%3 != 0) { //reszta z dzielenia przez 3 różna od zera to prawda i wykonaj czyli wróć bez logowania/zwracania wyniku (czyli ten wynik to są liczby niepodzielne przez 3)
+        continue;
+    };
+    
+    console.log(i);
+}
 
 
