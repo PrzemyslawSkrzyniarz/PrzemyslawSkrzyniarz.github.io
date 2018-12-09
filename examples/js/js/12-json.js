@@ -251,4 +251,4 @@ function printUserInfo(idArr){
     })
 }
     
-    printUserInfo([1,3,7,11]);
+    printUserInfo([1,3,7,11, 100]);
