@@ -32,8 +32,8 @@ console.log(person);
 //zawsze tworzymy przy użyciu Dużej Litery
 class Car {
     constructor(brand, color){
-        this.brand = brand; //może być też tak >> this.a = brand;
-        this.color = color; //może być >> this.b = color; 
+        this.brand = brand; //możemy wybrać tworząc klasę dowolnie czyli np. a zamiast brand a wtedy >> this.a = brand;
+        this.color = color; //tutaj tak samo dowolnie jak powyżej 
     }
     
     printInfo() {

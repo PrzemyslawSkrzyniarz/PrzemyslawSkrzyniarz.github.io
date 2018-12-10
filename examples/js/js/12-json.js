@@ -240,15 +240,16 @@ Napisz funkcję która przyjmie jeden parametr - tablicę z id użytkowników. F
 "Użytkownik o id x ma na imię xxx i mieszka w mieście xxx"
 */
 
-function printUserInfo(idArr){
+function printUserInfo(idArr){ //Przydała by się metoda w tym obiekcie - nie trzeba by tworzyć na zewnątrz funkcji printUserInfo
         
     idArr.forEach(function(elem, indx){
         
-        if(elem > users.length) return;
+        if(elem > users.length) return; //Jak podamy id większe niż to w obiekcie (nawet gdyby id niestniejące stanowiło pierwszy parametr funkcji) to niedostaniemy informacji, ale ta linijka uchroni nas przed błędem i niewykonaniem się skryptu oraz wyswietleniem info, że brak użytkowników o podanym id.
+        
         
         console.log(`Użytkownik o id ${users[elem -1 ].id} ma na imię ${users[elem -1 ].name} i mieszka w mieście ${users[elem -1 ].address.city}`)
         
     })
 }
     
-    printUserInfo([1,3,7,11, 100]);
+    printUserInfo([1,3,100,7,8]);

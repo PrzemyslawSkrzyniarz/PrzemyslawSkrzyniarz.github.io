@@ -19,4 +19,4 @@ document.querySelector('button').addEventListener('click',
 
 
 
-//Jednak wciąż przy użyciu funkcji anonimowej, której używa się by coś na szybko i małego (parę linijek kodu) przetestować, ale nie w większych projektach (przy większej ilości kodu) czy dla klienta
+//Jednak wciąż przy użyciu funkcji anonimowej, której używa się by coś na szybko i małego (parę linijek kodu) przetestować. Funkcji anonimowych nie używajmy w większych projektach (przy większej ilości kodu) czy w kodzie dla klienta.
