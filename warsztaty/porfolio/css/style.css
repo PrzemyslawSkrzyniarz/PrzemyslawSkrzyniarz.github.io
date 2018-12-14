@@ -165,7 +165,7 @@ header span {
 
 .portfolio {
     background-color: #f2f1ed;
-    /*Dla wększej ilości sekcji można użyć opcji even-parzyste zamiast klas*/
+    /*Dla większej ilości sekcji można użyć opcji even-parzyste zamiast klas*/
 }
 
 .portfolio .portfolio-wrapper {
@@ -178,7 +178,7 @@ header span {
     height: 200px;
     flex-basis: 25%;
     position: relative;
-    /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 1 warunek z 5*/
+    /*dodaliśmy by opis Project zaczął się pozycjonować - 1 warunek z 5*/
 }
 
 .portfolio .portfolio-wrapper .portfolio-item img {
@@ -193,13 +193,13 @@ header span {
 .portfolio .portfolio-wrapper .portfolio-item h3 {
     position: absolute;
     top: 0;
-    /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 2 warunek z 5*/
+    /*dodaliśmy by opis Project zaczął się pozycjonować - 2 warunek z 5*/
     line-height: 200px;
-    /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 3 warunek z 5*/
+    /*dodaliśmy by opis Project zaczął się pozycjonować - 3 warunek z 5*/
     margin: 0;
-    /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 4 warunek z 5*/
+    /*dodaliśmy by opis Project zaczął się pozycjonować - 4 warunek z 5*/
     width: 100%;
-    /*dodaliśmy by opis Projest żeby zaczął się pozycjonować - 5 warunek z 5*/
+    /*dodaliśmy by opis Project zaczął się pozycjonować - 5 warunek z 5*/
     font-size: 3em;
     font-weight: 300;
     color: #fff;
