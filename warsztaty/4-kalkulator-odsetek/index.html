@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkluator odsetkowy</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <h2>Wprowadź dane</h2>
+
+  <form id="kalkulator">
+
+    <div class="row">
+
+
+      <label for="wplata">Wpłata w PLN: </label>
+      <input id='wplata' type="number" value="0" min="0" />
+      
+       <label for="okres-kapitalizacji">Częstotliwość kapitalizacji: </label>
+       <select id="okres-kapitalizacji">
+        <option value="12">Miesięcznie</option>
+        <option value="4">Kwartalnie</option>
+        <option value="1">Rocznie</option>
+      </select>
+
+      <label for="ilosc-lat">Liczba lat: </label>
+      <input id="ilosc-lat" type="number" value="1" min="1" />
+
+    </div>
+
+    <div class="row">
+
+      <label for="oprocentowanie">Stopa zwrotu w %:</label>
+      <input id="oprocentowanie" type="number" value="0" />
+
+
+    </div>
+
+
+    <div class="row">
+
+      <label for="podatek">Uwzględnij podatek belki 19%: </label>
+      <input id="podatek" type="checkbox" />
+
+    </div>
+
+    <div class="row">
+      <button type="button" id="oblicz">Oblicz</button>
+    </div>
+
+
+  </form>
+
+  <div id="wynik"></div>
+
+
+  <script src="js/calculator.js"></script>
+
+</body>
+
+</html>
