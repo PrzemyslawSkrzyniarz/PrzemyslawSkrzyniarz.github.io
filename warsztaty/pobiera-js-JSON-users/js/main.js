@@ -28,34 +28,4 @@ fetch('https://jsonplaceholder.typicode.com/users')
         
     });
     
-    
 });
-
-//$(document).ready(function () {
-//
-//    $.getJSON('https://jsonplaceholder.typicode.com/users', function (data) {
-//
-////        for (i = 0; i < data.length; i++) {
-////            console.log(data);
-////            var paramId = $('<div>');
-////            paramId.text(data[i].id);
-////            console.log(data[i].id);
-////
-////            var paramName = $('<div>');
-////            paramName.text(data.name);
-////            console.log(data[i].name);
-////
-////            var paramCity = $('<div>');
-////            paramCity.text(data[i].address.city);
-////            console.log(data[i].address.city);
-////        };
-////
-////        var userDiv = $('<div class="Users">');
-////        $(userDiv).append(paramId);
-////        $('body').prepend(userDiv);
-//        
-//        
-//
-//    });
-//
-//});

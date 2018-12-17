@@ -6,7 +6,7 @@ $(document).ready(function () {
 //            console.log(data);
             var parId = $('<p>'); //tworzenie elementu w jQuery - analogia do document.createElement();
 //            console.log(data);
-            parId.text('User id: ' + data.userId); //przekazujemy jako text do stworzonego elementu czyli tutaj paragrafu
+            parId.text('User id: ' + data.userId); //przekazujemy jako text do stworzonego elementu czyli tutaj to jest paragraf
 //            $('body').append(parId); //dodadjemy na stronie
             
             var parName = $('<p>');
