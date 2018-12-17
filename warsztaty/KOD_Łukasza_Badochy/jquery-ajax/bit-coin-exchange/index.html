@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<h2>Kurs wymiany PLN/BTC</h2>
+	<p>Kurs wymiany PLN na BitCoina wynosi:</p>
+	<p><span id="exchange-rate">0.00</span> <i id="rate-arrow" class="far fa-minus-square"></i></p>
+	
+	<h3>Odświeżaj kurs co: </h3>
+	<div id="interval-panel">
+		<button value="1000">1 sekunda</button>
+		<button value="5000">5 sekund</button>
+		<button value="10000">10 sekund</button>
+		<button value="30000">30 sekund</button>
+		<button value="60000">60 sekund</button>
+	</div>
+	<p>Kurs odświeżany co <span id="intertal-time">5 sekund</span></p>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+#list-container {
+    border: 2px solid red;
+}
+
+.user-row {
+    display: flex;
+    border: 1px solid black;
+}
+
+.user-row div {
+    flex: 33.33%;
+    border: 1px solid black;
+    text-align: center;
+}

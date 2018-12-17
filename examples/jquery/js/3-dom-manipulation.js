@@ -5,7 +5,7 @@ $(document).ready(function(){
     console.log(headingText);
 
     /* Ustawianie nowej zawartości tekstowej */
-    $('#first').text('Nowy nagłówej');
+    $('#first').text('Nowy nagłówej'); //nie można dodawać znaczników html
     
     /* Ustawianie nowej zawartości jako kodu html */
     $('#first').html('Nowy nagłówej ze <span>spanem</span>');
