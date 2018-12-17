@@ -1,0 +1,8 @@
+1 - Z adresów poni¿ej pobierz i wyœwietl na stronie tylko 50 sztuk odpowiednio tytu³ów i adresów albumów oraz poni¿ej tytu³ów i treœci postów.
+A - https://jsonplaceholder.typicode.com/photos
+B - https://jsonplaceholder.typicode.com/posts
+
+2 - Dodatkowy opcjonalny feature to do³adowanie siê kolejnych 50 sztuk np. po 10 po klikniêciu
+
+=========================================
+JS lub jQuery do wyboru ;-)

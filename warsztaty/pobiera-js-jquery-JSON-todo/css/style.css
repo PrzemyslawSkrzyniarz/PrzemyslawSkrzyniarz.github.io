@@ -1,0 +1,30 @@
+#list-container {
+    border: 1px solid blue;
+}
+
+#user-row {
+    display: flex;
+   /*    border: 1px solid black;*/
+}
+
+#user-row div {
+    flex: 1;
+    border: 1px solid black;
+}
+
+#user-row .user-mark {
+    flex-grow: 2;
+    text-align: center;
+}
+
+#user-row .user-id {
+    flex-grow: 2;
+    text-align: center;
+}
+
+#user-row .user-title {
+    flex-grow: 20;
+    text-align: right;
+}
+
+ 
