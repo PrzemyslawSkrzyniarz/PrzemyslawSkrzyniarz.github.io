@@ -1,16 +1,17 @@
 $(document).ready(function () {
     $.getJSON('https://jsonplaceholder.typicode.com/todos', function (data) {
-        console.log(data);
 
         $.each(data, function (id, data) {
-            //            console.log(data);
 
             let divRow = $('<div id="user-row">');
 
             let divMark = $('<div class="user-mark">');
-            divMark.text(data.completed);
-                        console.log(divMark);
-            //            console.log(data.completed);
+                
+            let trueFalseWords = JSON.stringify(data.completed);
+            let yesFalseWords = trueFalseWords.replace('true', 'Yes');
+            let yesNoWords = yesFalseWords.replace('false', 'No');
+
+            divMark.text(yesNoWords);
 
             let divId = $('<div class="user-id">');
             divId.text(data.id);
