@@ -1,0 +1,15 @@
+1. Stwórz element button
+2. Pod elementem button stwórz piêæ paragrafów z treœci¹ "To jest paragraf
+/numer_paragrafu/" - jako /numer_paragrafu/ nadaj numery kolejno 1,
+2, 3, 4, 5
+3. Po klikniêciu w przycisk ostatni paragraf ma zostaæ przeniesiony na
+pierwsz¹ pozycjê
+4. Kolejne klikniêcia maj¹ przenosiæ aktualnie ostatni paragraf na
+pierwsz¹ pozycjê
+5. Stwórz kolejny przycisk (element button), który bêdzie mia³ dzia³anie odwrotne, czyli bêdzie przenosi³ paragrafy z pierwszej pozycji na ostatni¹
+
+Zadanie podsy³amy z u¿yciem https://repl.it
+
+PodpowiedŸ przed wys³aniem zadania do sprawdzenia:
+- pamiêtaj, ¿e skrypty zawsze podpinamy na koñcu, a biblioteka jQuery ma byæ podpiêta powy¿ej Twojego skryptu.
+- bibliotekê jQuery podepnij w wersji zdalnej z serwera CDN.
