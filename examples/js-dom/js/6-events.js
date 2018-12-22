@@ -9,17 +9,15 @@ function changeBackground() {
     //    document.querySelector('h1').classList.toggle('red');
     console.log(this);
     this.classList.toggle('red');
-
-
 }
 
 
-//button.onclick = changeBackground; //przypisujemy metodę do właściwości onclick obiektu buuton
+//button.onclick = changeBackground; //przypisujemy metodę do właściwości onclick obiektu button
 
 button.addEventListener('click', changeBackground) //ten sposób przechwytywania zdarzeń w js jest wykorzystywany dlatego, że ten nasłuch (1) można usunąć zdarzenie o nazwane funkcje (nie anonimowe), (2) dodać dodatkowe zdarzenie/akcję, (3) dodać funkcję anonimową, (4) ustawić nową wartość na zdarzenie/akcje zaraz po poprzednim jak poniższe dwa
 
 button.addEventListener('mouseover',
-    function () { //funkcji anonimowych nie używa się w dużych projektach bo ciezko je potem znaleźć, a poza tym nie można ich wykorzystać w innych przypadkach
+    function () { //funkcji anonimowych nie używa się w dużych projektach bo ciężko je potem znaleźć, a poza tym nie można ich wykorzystać w innych przypadkach
         this.style.fontSize = '2em';
     });
 
