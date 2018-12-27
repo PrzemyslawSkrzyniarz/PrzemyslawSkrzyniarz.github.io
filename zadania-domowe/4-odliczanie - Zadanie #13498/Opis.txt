@@ -1,0 +1,18 @@
+Opis
+
+Zadaniem jest stworzenie animacji odliczającej od 10 do 1.
+
+Każda liczba wyświetla się dokładnie przez sekundę, następnie znika i pojawia się kolejna.
+
+Cała animacja kończy się napisem "I love CSS :)"
+
+Dołączony obrazek pokazujący przykładową animację.
+
+Zadanie zrób w serwisie https://repl.it
+
+=================
+postion
+opacity
+transition - efekty przejścia << zamiast tego animation
+transform - rotacja << to nie
+animation
