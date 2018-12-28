@@ -3,134 +3,169 @@ div {
     justify-content: center;
 }
 
+#wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 p {
     flex-direction: row;
-    position: absolute;  /*ODBLOKUJ gdy będzie gotowa animacja - By paragrafy były na sobie*/
-    font-size: 4em;
-    height: 2em;
-    width: 2em;
-    margin-top: 3em;
-    text-align: center;
+    position: absolute;
+    font-size: 15vw;
+    align-self: flex-end;    
 }
 
-@keyframes example {
-    0% {
-        opacity: 0;
-    }
-
-    10% {
-        opacity: 0;
-    }
-
-    20% {
-        opacity: 0;
-    }
-
-    30% {
-        opacity: 0;
-    }
-
-    40% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    60% {
-        opacity: 0;
-    }
-
-    70% {
-        opacity: 0;
-    }
-
-    80% {
-        opacity: 0;
-    }
-
-    90% {
-        opacity: 0;
-    }
-
-    95% {
-        opacity: 0;
-    }
-
-    100% {
+@keyframes countAnimation {
+   0%, 100% {
         opacity: 1;
     }
-
 }
+
+/* Ułatwieniem dla mnie, by ustawić animację czasowo według wskazań do zadania, była wiedza zawarta tutaj >>
+>> https://css-tricks.com/css-keyframe-animation-delay-iterations/ */
 
 #no1 {
     opacity: 0;
-    animation-name: example;
+    animation: countAnimation 1s 1;
+}
+
+
+#no2 {
+    opacity: 0;
+    animation: countAnimation 1s 1s 1;
+}
+
+#no3 {
+    opacity: 0;
+    animation: countAnimation 1s 2s 1;
+}
+
+#no4 {
+    opacity: 0;
+    animation: countAnimation 1s 3s 1;
+}
+
+#no5 {
+    opacity: 0;
+    animation: countAnimation 1s 4s 1;
+}
+
+#no6 {
+    opacity: 0;
+    animation: countAnimation 1s 5s 1;
+}
+
+#no7 {
+    opacity: 0;
+    animation: countAnimation 1s 6s 1;
+}
+
+#no8 {
+    opacity: 0;
+    animation: countAnimation 1s 7s 1;
+}
+
+#no9 {
+    opacity: 0;
+    animation: countAnimation 1s 8s 1;
+}
+
+#no10 {
+    opacity: 0;
+    animation: countAnimation 1s 9s 1;
+}
+
+#IloveCSS {
+    opacity: 0;
+    animation: countAnimation 5s 10s infinite;
+/*
+    animation-name: countAnimation;
+    animation-delay: 10s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+*/
+}
+
+/* OPCJA ŁATWIEJSZA DO SPRAWDZENIA NP Z >> http://www.clocktab.com/
+BO ANIMACJA ZACZYNA SIĘ PO SEKUNDZIE PO ODŚWIEŻENIU STRONY*/
+/*
+#no1 {
+    opacity: 0;
+    animation-name: countAnimation;
+    animation-delay: 1s;
     animation-duration: 1s;
-/*    animation-delay: 1s;*/
     animation-iteration-count: 1;
 }
 
 #no2 {
     opacity: 0;
-    animation-name: example;
-    animation-duration: 2s;
+    animation-name: countAnimation;
+    animation-delay: 2s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
 }
 
 #no3 {
     opacity: 0;
-    animation-name: example;
-    animation-duration: 3s;
+    animation-name: countAnimation;
+    animation-delay: 3s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
 }
 
 #no4 {
     opacity: 0;
-    animation-name: example;
-    animation-duration: 4s;
+    animation-name: countAnimation;
+    animation-delay: 4s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
 }
 
 #no5 {
     opacity: 0;
-    animation-name: example;
-    animation-duration: 5s;
+    animation-name: countAnimation;
+    animation-delay: 5s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
 }
 
 #no6 {
     opacity: 0;
-    animation-name: example;
-    animation-duration: 6s;
+    animation-name: countAnimation;
+    animation-delay: 6s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
 }
 
 #no7 {
     opacity: 0;
-    animation-name: example;
-    animation-duration: 7s;
+    animation-name: countAnimation;
+    animation-delay: 7s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
 }
 
 #no8 {
     opacity: 0;
-    animation-name: example;
-    animation-duration: 8s;
+    animation-name: countAnimation;
+    animation-delay: 8s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
 }
 
 #no9 {
     opacity: 0;
-    animation-name: example;
-    animation-duration: 9s;
+    animation-name: countAnimation;
+    animation-delay: 9s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
 }
 
 #no10 {
     opacity: 0;
-    animation-name: example;
-    animation-duration: 10s;
+    animation-name: countAnimation;
+    animation-delay: 10s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
 }
+*/

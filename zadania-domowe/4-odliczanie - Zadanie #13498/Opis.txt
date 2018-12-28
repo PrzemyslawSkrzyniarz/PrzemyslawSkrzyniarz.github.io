@@ -12,16 +12,14 @@ Zadanie zrób w serwisie https://repl.it
 
 =================
 
+Moje przemyślenia i znaleziska
+
 1 - stwórz w html dziesieć paragrafów w każdym jedna cyfra w kolejności od 1-10 z id od 1-10 zawierających cyfry.
-
-WARTO przeczytać >> https://css-tricks.com/css-keyframe-animation-delay-iterations/
-
-animation-delay: 1s;
-
-animation-delay: -2s;
 
 position
 opacity
 transition - efekty przejścia << zamiast tego animation
 transform - rotacja << to nie
 animation
+
+WARTO przeczytać >> https://css-tricks.com/css-keyframe-animation-delay-iterations/
