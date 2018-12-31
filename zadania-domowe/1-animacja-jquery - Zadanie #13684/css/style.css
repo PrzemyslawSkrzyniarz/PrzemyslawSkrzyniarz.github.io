@@ -1,0 +1,19 @@
+div#square {
+    margin-top: 10px;
+    margin-right: 0;
+    background: red;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    display: flex;
+}
+
+
+h2 {
+    display: flex;
+    align-content: flex-end;
+    text-align: center;
+    font-stretch: normal;
+    opacity: 0;
+}
+
