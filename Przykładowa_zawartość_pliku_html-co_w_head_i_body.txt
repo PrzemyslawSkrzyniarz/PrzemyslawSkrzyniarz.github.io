@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    
     <!-- meta:vp - skrót emmeta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Front End Developer - Zadanie #13488</title>
 
     <!-- Fonts -->
@@ -14,11 +16,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     
     <!-- Custom Style -->
+    <!-- link:css - skrót emmeta -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
+
+<h1>Test</h1>
+
+<button id="get-data">Pobierz dane</button>
    
     <div id="background" class="content">
 
@@ -35,6 +42,14 @@
         </header>
 
     </div>
+    
+    <!-- Slowa do wyszukania:  jquery cdn >> pobieramy plik lub link (najlepiej "minified") z https://code.jquery.com/ by wykorzystac w swoim projekcie jQuery -->
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+    <script src="js/3-ajax-jquery.js"></script>
 
 </body>
 
