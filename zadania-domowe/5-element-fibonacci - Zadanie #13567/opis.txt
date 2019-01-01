@@ -1,0 +1,15 @@
+Napisz funkcję, która zwraca wartość n-tego elementu ciągu fibbonaciego. Wynik działań i funkcji wyświetl w konsoli.
+
+Jako parametr funkcja przyjmuje n - czyli n-ty element ciągu fibbonaciego.
+
+Zadanie domowe robimy z wykorzystaniem serwisu https://repl.it
+
+Podpowiedź przed wysłaniem zadania do sprawdzenia:
+- znajdź w internecie opis merytoryczny ciągu fibbonaciego
+
+=======================================================
+Znalezione:
+
+1 >> https://pl.wikipedia.org/wiki/Ci%C4%85g_Fibonacciego
+2 >> https://medium.com/developers-writing/fibonacci-sequence-algorithm-in-javascript-b253dc7e320e << najlepsza jest pętla while czyli "First implementation"
+3 >> Warto tu zajrzeć - zwraca ciąg o wybranej długości >> https://www.w3resource.com/javascript-exercises/javascript-recursion-function-exercise-6.php
