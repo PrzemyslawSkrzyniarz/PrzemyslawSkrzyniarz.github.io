@@ -12,7 +12,8 @@ p {
     flex-direction: row;
     position: absolute;
     font-size: 15vw;
-    align-self: flex-end;    
+    align-self: flex-end;  
+    opacity: 0;
 }
 
 @keyframes countAnimation {
@@ -25,58 +26,47 @@ p {
 >> https://css-tricks.com/css-keyframe-animation-delay-iterations/ */
 
 #no1 {
-    opacity: 0;
     animation: countAnimation 1s 1;
 }
 
 
 #no2 {
-    opacity: 0;
     animation: countAnimation 1s 1s 1;
 }
 
 #no3 {
-    opacity: 0;
     animation: countAnimation 1s 2s 1;
 }
 
 #no4 {
-    opacity: 0;
     animation: countAnimation 1s 3s 1;
 }
 
 #no5 {
-    opacity: 0;
     animation: countAnimation 1s 4s 1;
 }
 
 #no6 {
-    opacity: 0;
     animation: countAnimation 1s 5s 1;
 }
 
 #no7 {
-    opacity: 0;
     animation: countAnimation 1s 6s 1;
 }
 
 #no8 {
-    opacity: 0;
     animation: countAnimation 1s 7s 1;
 }
 
 #no9 {
-    opacity: 0;
     animation: countAnimation 1s 8s 1;
 }
 
 #no10 {
-    opacity: 0;
     animation: countAnimation 1s 9s 1;
 }
 
 #IloveCSS {
-    opacity: 0;
     animation: countAnimation 5s 10s infinite;
 /*
     animation-name: countAnimation;
