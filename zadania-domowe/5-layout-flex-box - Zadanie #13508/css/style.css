@@ -1,34 +1,33 @@
 body {
     padding: 2em;
+    color: white;
 }
 
 #container {
     font-family: 'Merriweather', serif;
     text-transform: uppercase;
     text-align: center;
-    
+
     display: flex;
     flex-flow: row wrap;
-    /* This is a shorthand flex-direction and flex-wrap properties, which together define the flex container's main and cross axes. Default is row nowrap. */
 }
 
 #container > * {
-    padding: 10px;
-    flex: 1 100%;
-    /* We tell all items to be 100% width, via flex-basis */
-    /* This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. */
-    /* flex-basis
-This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property" (which was temporarily done by the main-size keyword until deprecated). The content keyword means "size it based on the item's content" - this keyword isn't well supported yet, so it's hard to test and harder to know what its brethren max-content, min-content, and fit-content do. */
+    padding: 5px;
 }
 
 .header {
     background: tomato;
-    /*    margin: -16px auto; << zakomentowałem, gdy w #container wpisałem flex-flow: row wrap; >> W samym Chrome w DevTools wystarcza margin: 0;*/
 }
 
-.main {
+.article {
     background: deepskyblue;
-    text-align: left;
+    text-align: center;
+}
+
+p,
+.aside {
+    margin: 0px;
 }
 
 .asideLeft {
@@ -41,52 +40,4 @@ This defines the default size of an element before the remaining space is distri
 
 .footer {
     background: violet;
-    /*    margin: -16px auto; << zakomentowałem, gdy w #container wpisałem flex-flow: row wrap; >> W samym Chrome w DevTools wystarcza margin: 0;*/
-}
-
-/* Large screens */
-@media all and (min-width: 993px) {
-
-    /* We invert order of first sidebar (asideLeft) and main
-   * And tell the main element to take twice as much width as the other two sidebars (asideLeft and asideRight)
-   */
-    .main {
-        flex: 2 0px;
-    }
-
-    .asideLeft {
-        order: 1;
-    }
-
-    .main {
-        order: 2;
-    }
-
-    .asideRight {
-        order: 3;
-    }
-
-    .footer {
-        order: 4;
-    }
-}
-
-/* Medium screens */
-@media all and (min-width: 768px) and (max-width: 992px) {
-
-    /* We tell both sidebars to share a row */
-    .aside {
-        flex: 1 auto;
-        background: yellow;
-    }
-}
-
-/* Small screens */
-@media all and (max-width: 767px) {
-
-    /* We tell both sidebars to share a row */
-    .aside {
-        flex: 1 auto;
-        background: orange;
-    }
 }

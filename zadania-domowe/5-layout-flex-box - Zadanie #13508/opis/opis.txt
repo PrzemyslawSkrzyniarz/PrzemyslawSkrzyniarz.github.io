@@ -13,3 +13,9 @@ Artykuły, które opisują działanie flex-boxa:
 - https://www.w3.org/TR/css-flexbox-1/
 
 Zadanie domowe należy oddać za pomocą GitHub Pages
+
+==============================================
+Te linki także stanowią dobre źródło wiedzy:
+
+- https://css-tricks.com/almanac/properties/f/flex/
+- https://css-tricks.com/almanac/properties/f/flex-flow/
