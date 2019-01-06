@@ -1,0 +1,12 @@
+.example-fluid {
+    height: 200px;
+    background-color: aquamarine;
+}
+.example {
+    height: 200px;
+    background-color: darkred;
+}
+.item1, .item2, .item3, .item4 {
+    height: 300px;
+    background-color: cadetblue;
+}

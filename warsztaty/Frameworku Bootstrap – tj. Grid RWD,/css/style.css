@@ -1,0 +1,147 @@
+/* General style*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+a,
+a:hover {
+    color: #e38f42;
+}
+
+p {
+    color: #888;
+}
+
+.btn {
+    padding: 15px 20px;
+}
+
+.btn-orange,
+.btn-orange:hover {
+    color: #fff;
+    background-color: #e38f42;
+}
+
+.btn-gray,
+.btn-gray:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+section, footer {
+    padding: 120px 0;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+/* Navigation */
+
+.navbar {
+    background-color: #444;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-brand:visited,
+.navbar .nav-item .nav-link,
+.navbar .nav-item .nav-link:visited {
+    color: #c2c2c2;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .nav-item .nav-link:hover {
+    /*Ostatni stylujemy i do niego dodajemy hover - zamiana po najechaniu myszką*/
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+.input-item {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.join-us form {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.join-us {
+/*    background-image: url(https://akademia108.pl/kurs-front-end/form-background.jpg);*/
+    background-image: url(../img/form-background.jpg); /**/
+    background-size: cover;
+}
+
+.join-us form header {
+    background-color: rgba(0,0,0,0.6);
+    padding: 25px;
+    margin: 0;
+}
+
+.join-us form header p {
+    margin: 0;
+}
+
+.join-us form header h2 {
+    color: #fff;
+}
+
+.join-us form header i {
+    color: #888;
+    font-size: 3.7em;
+}
+
+.join-us form fieldset {
+    padding: 25px;
+}
+
+.join-us form input, .joim-us form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+}
+
+.join-us .content-holder {
+     padding-top: 120px;   
+}
+
+.join-us .content-holder h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.join-us .content-holder p {
+    color: #888;
+    font-size: 18px;
+}
+
+.join-us .content-holder i {
+    margin-left: 5px;
+}
+
+.join-us .content-holder a {
+    margin: 10px;
+}
+
+/* Footer */
+
+footer p {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .video-folder {
+        margin-bottom: 40px;
+    }
+    footer {
+        padding-top: 0;
+    }
+}
