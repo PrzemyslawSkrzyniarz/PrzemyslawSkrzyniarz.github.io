@@ -1,0 +1,34 @@
+.form-section {
+    height: 100vh;
+    min-height: 700px; /*Ustalamy aby przy mniejszych ekranach było i tak 700px*/
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: top; /*Ustawiamy to na top by przy najmniejszych ekranach Pani chowała się będąc po lewej*/
+    color: $light-color;
+    
+    &-item {
+        position: absolute; /*Wybrałem absolute bo rodzic ma relative i marginesami mogę ustalić położenie czyli do prawej choć po lewej nie mam nic*/
+        top: 25%;
+        right: 10%;
+        width: 370px;
+    }
+}
+
+
+.main-form {
+    background-color: $primary-color;
+    
+    fieldset {
+        border-style: none;
+        
+        input:not([type="submit"]), textarea {
+            @include inputs;
+            margin-bottom: 10px;
+        }
+        
+        input[type="submit"] {
+            @include inputs-submit;
+            border: none;
+        }
+    }
+}

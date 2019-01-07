@@ -1,0 +1,13 @@
+body {
+  background: #00ffbb;
+  font-size: 20px; }
+
+nav ul {
+  background-color: #ff6512;
+  list-style-type: none; }
+  nav ul li {
+    display: inline-block; }
+    nav ul li a {
+      color: #ff5490;
+      font-size: 40px;
+      text-decoration: none; }

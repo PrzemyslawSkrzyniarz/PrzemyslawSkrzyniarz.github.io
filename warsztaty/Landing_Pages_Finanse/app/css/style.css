@@ -1,0 +1,127 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  /* kasuje border i padding */ }
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #001d8a; }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 1170px;
+  height: 100%;
+  /*Ustalam by container rozciągał się na 100% wysokości w przeciwnym wypadku ma zero*/
+  margin: auto; }
+
+.important-text {
+  color: #ecd407; }
+
+header {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  color: #fff; }
+  header .main-logo h2 {
+    display: inline-block; }
+  header .main-logo .fa-university {
+    font-size: 2em;
+    margin-right: 10px;
+    color: #ecd407; }
+  header .header-contact {
+    display: flex;
+    width: 300px; }
+    header .header-contact .fa-phone {
+      font-size: 2em;
+      margin-right: 10px;
+      line-height: 45px;
+      transform: rotate(90deg); }
+    header .header-contact-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 15px; }
+    header .header-contact-text {
+      /*& zastępuje .header-contact*/
+      font-size: 0.8em; }
+    header .header-contact-phone {
+      /*& zastępuje .header-contact*/
+      font-size: 1.2em; }
+
+.form-section {
+  height: 100vh;
+  min-height: 700px;
+  /*Ustalamy aby przy mniejszych ekranach było i tak 700px*/
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-position: top;
+  /*Ustawiamy to na top by przy najmniejszych ekranach Pani chowała się będąc po lewej*/
+  color: #fff; }
+  .form-section-item {
+    position: absolute;
+    /*Wybrałem absolute bo rodzic ma relative i marginesami mogę ustalić położenie czyli do prawej choć po lewej nie mam nic*/
+    top: 25%;
+    right: 10%;
+    width: 370px; }
+
+.main-form {
+  background-color: #001d8a; }
+  .main-form fieldset {
+    border-style: none; }
+    .main-form fieldset input:not([type="submit"]), .main-form fieldset textarea {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px; }
+    .main-form fieldset input[type="submit"] {
+      padding: 20px;
+      background-color: #ecd407;
+      font-size: 1.2em;
+      border: none; }
+
+footer {
+  background-color: #292929;
+  padding: 50px 0;
+  color: #fff; }
+  footer .footer-item {
+    /*Nie możemy użyć & zamiast footer bo footer jest też uzywane jako znacznik*/
+    width: 50%;
+    text-align: center; }
+  footer-phone, footer-envelope {
+    display: block; }
+  footer .fas {
+    width: 50px;
+    height: 50px;
+    background-color: #f4b939;
+    color: #000;
+    font-size: 25px;
+    line-height: 50px;
+    /*Wyśrodkowanie ikony/tekstu w pionie - czyli ustawiamy na taką samą wysokość jak i kwadratu w którym się znajduje*/
+    margin-bottom: 10px; }
+  footer p {
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 50px; }
+
+@media (max-width: 1170px) {
+  .container {
+    width: 992px; } }
+
+@media (max-width: 992px) {
+  .container {
+    width: 768px; } }
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px; }
+  header .header-contact {
+    display: none; }
+  header .main-logo {
+    margin: auto; }
+  .form-section {
+    background-position: 95%;
+    /*Ustawiamy to na 95% by przy najmniejszych ekranach Pani znikała/chowała się będąc po lewej*/ } }

@@ -1,0 +1,15 @@
+@mixin fa-header {
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+@mixin inputs {
+    padding: 10px;
+    width: 100%;
+}
+
+@mixin inputs-submit {
+    padding: 20px;
+    background-color: $secondary-color;
+    font-size: 1.2em;
+}

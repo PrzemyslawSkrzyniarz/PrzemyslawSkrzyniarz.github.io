@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box; /* kasuje border i padding */
+}
+
+body {
+    margin: 0;
+    font-family: $main-font;
+    background-color: $primary-color;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 1170px;
+    height: 100%; /*Ustalam by container rozciągał się na 100% wysokości w przeciwnym wypadku ma zero*/
+    margin: auto;
+}
+
+.important-text {
+    color: $secondary-color;
+}

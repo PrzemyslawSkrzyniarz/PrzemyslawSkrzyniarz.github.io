@@ -1,0 +1,14 @@
+nav{
+    ul {
+        background-color: $list-color;
+        list-style-type: none;
+        
+        li{
+            display: inline-block;
+            
+            a {
+                @include menu-nav-item;
+            }
+        }
+    }
+}
