@@ -1,0 +1,46 @@
+header {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    color: $light-color;
+    
+    .main-logo {
+        
+        h2 {
+            display: inline-block;
+        }
+        
+        .fa-university {
+            @include fa-header;
+            color: $secondary-color;
+        }
+    }
+    
+    .header-contact {
+        display: flex;
+        width: 300px;
+        
+        .fa-phone {
+            @include fa-header;
+            line-height: 45px;
+            transform: rotate(90deg);
+        }
+        
+        &-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 15px;
+        }
+        
+        &-text {
+            font-size: 0.8em;
+        }
+        
+        &-phone {
+            font-size: 1.2em;
+        }
+        
+    }
+}

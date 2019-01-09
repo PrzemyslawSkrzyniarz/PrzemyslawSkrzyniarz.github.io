@@ -1,0 +1,32 @@
+@media (max-width: 1170px) {
+    .container {
+        width: 992px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    header {
+        .header-contact {
+            display: none;
+        }
+        
+        .main-logo {
+           margin: auto;
+        }
+    }
+    
+    .form-section {
+        background-position: 95%;
+    }
+}

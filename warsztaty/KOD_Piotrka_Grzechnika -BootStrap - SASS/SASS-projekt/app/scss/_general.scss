@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $main-font;
+    background-color: $primary-color;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 1170px;
+    height: 100%;
+    margin: auto;
+}
+
+.important-text {
+    color: $secondary-color;
+}

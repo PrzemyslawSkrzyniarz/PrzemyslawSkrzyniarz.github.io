@@ -1,0 +1,32 @@
+.form-section {
+    height: 100vh;
+    min-height: 700px;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: top;
+    color: $light-color;
+    
+    &-item {
+        position: absolute;
+        top: 25%;
+        right: 10%;
+        width: 370px;
+    }
+    
+    .main-form {
+        background-color: $primary-color;
+        
+        fieldset {
+            border-style: none;
+            
+            input:not([type="submit"]), textarea {
+                @include inputs;
+                margin-bottom: 10px;
+            }
+            
+            input[type="submit"] {
+                @include inputs-submit;
+            }
+        }
+    }
+}
