@@ -1,0 +1,28 @@
+Zadanie #14033 - 1-strona-video - aktualne pliki CMS Wordpress pobrane z wordpress.org czyli pliki umieszczone w xampp - htdocs
+
+Opis
+
+Stwórz motyw potomny (child theme) motywu g³ównego "Twenty Seventeen", w którym bêdzie szablon strony (page template)
+
+Stwórz szablon strony (page template) o nazwie "Video". 
+Za pomoc¹ metod:
+- get_header() 
+- get_footer() 
+dodaj w szablonie nag³ówek i stopkê aktualnego motywu.
+
+Miêdzy nag³ówkiem i stopk¹ osadŸ Twoje ulubione video z YouTube.
+
+Pod filem wyœwietl jego opis, który zostanie pobrany z treœci strony za pomoc¹ funkcji the_content() - opis u¿ycia tej funkcji znajdziesz
+https://stackoverflow.com/questions/5465765/how-do-i-display-a-wordpress-page-content
+
+HTML dla szablonu "Video" dowolny, ale z zgodny z HTML5.
+
+W panelu administracyjnym stwórz now¹ stronê i nadaj jej nazwê Mój Film. 
+Jako szablon strony ustaw "Video" - dodaj opis filmu w edytorze.
+
+Zapisz stronê i dodaj link do niej w menu nawigacyjnym.
+
+PodpowiedŸ przed wys³aniem zadania do sprawdzenia:
+- Spakuj ca³y motyw potomny do archiwum ZIP
+- Uploaduj spakowany ZIP do serwisu https://wetransfer.com i pobierz linka
+- W treœci zadania podeœlij ten link, abyœmy mogli pobraæ Twój motyw potomny i go sprawdziæ
