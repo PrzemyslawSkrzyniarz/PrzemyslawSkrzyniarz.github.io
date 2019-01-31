@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    /* kasuje border i padding czyli elementy mają rozmiary takie jak widać */
 }
 
 body {
@@ -10,7 +11,9 @@ body {
 
 /* Header */
 #background {
+/*    height: 850px;*/
     height: 100vh;
+/*    margin-top: -150px;*/
     background-image: url(../img/more1770pxless992px.jpg);
     background-repeat: no-repeat;
     background-position: top;
@@ -46,6 +49,7 @@ body h1 span {
     #background {
         background-image: url("../img/992rangePX1770.jpg");
         margin-top: auto;
+/*        height: 100vh;*/
         height: 70vh;
         min-height: 700px;
         background-size: contain;
@@ -62,6 +66,10 @@ body h1 span {
         font-size: 1em;
     }
 
+    h1 {
+        /*        font-size: 1.2em;*/
+    }
+
     h1#display-out {
         display: none;
     }
@@ -71,6 +79,7 @@ body h1 span {
 
     #background {
         background-image: url(../img/more1770pxless992px.jpg);
+/*        background-size: auto 50vh;*/
         background-size: auto cover;
         margin-top: auto;
     }
@@ -81,6 +90,7 @@ body h1 span {
     }
 
     .main-header {
+        /*        display: flex;*/
         position: absolute;
         top: 100px;
         right: 0;
@@ -92,10 +102,12 @@ body h1 span {
     }
 
     h1#display-out {
+/*        height: 100px;*/
         height: 50hv;
         padding-top: 40px;
         width: auto;
-        margin: 600px 0;
+/*        margin: 500px 0;*/
+        margin: 600px 0; /*Zmieniłem bo ustawiłem  background-size: auto cover; w #background */
         text-align: center;
         display: flex;
         flex-direction: column;
